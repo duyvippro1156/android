@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49BEFF</color>
+    <color name="colorPrimaryDark">#65DCE5</color>
+    <color name="colorAccent">#0D5D98</color>
+    <color name="colorFollower">#0D5D98</color>
+    <color name="colorAddress">#2F7092</color>
+    <color name="colorHeadings">#3797CF</color>
+    <color name="colorSolidCircle">#80FFFFFF</color>
+    <color name="colorCircleBorder">#90FFFFFF</color>
+    <color name="colorGradEnd">#67EFC8</color>
+    <color name="colorGradStar">#63C9FF</color>
+    <color name="colorFollowersBg">#65DCE5</color>
+    <color name="colorFollowingBg">#49BEFF</color>
+    <color name="colorGrey">#E5E5E5</color>
+    <color name="white">#FFFFFF</color>
+</resources>
