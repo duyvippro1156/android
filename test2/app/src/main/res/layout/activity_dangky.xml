@@ -17,32 +17,23 @@
         android:layout_height="51dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
-        android:text="Welcome"
+        android:text="Login Now"
         android:textSize="30sp"
         android:textColor="#673AB7" />
 
     <TextView
-        android:layout_width="273dp"
-        android:layout_height="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
-        android:text="Đặng Công Phương - 1811505310334"
-        android:textColor="#000000"
+        android:text="Mai Xuân Duy - 1811505310309"
+        android:textColor="#454343"
         android:textSize="15sp" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/bglogin"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="120dp"
         android:text="Enter via Social Networks"
         android:textColor="#5A5858"
         android:textSize="15sp" />
@@ -54,7 +45,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
-        android:layout_marginBottom="270dp"
+        android:layout_marginBottom="500dp"
         android:id="@+id/linearLayout">
 
 
@@ -84,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="260dp"
         android:text="or login with"
         android:textColor="#000000"
         android:textSize="15sp" />
@@ -92,10 +83,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="525dp"
+        android:layout_marginTop="280dp"
         android:text="email"
         android:textColor="#000000"
         android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="Tên đăng nhập"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:ems="10"
+        android:hint=" Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="16dp"
+        android:layout_marginBottom="140dp"
+        android:layout_alignBottom="@+id/cardView"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="525dp"
+        android:text="Forgot Password?"
+        android:textColor="#474444"
+        android:textSize="15sp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -112,12 +141,12 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bthome"
+                android:id="@+id/btdangky"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
                 android:layout_centerInParent="true"
-                android:text="sign up"
+                android:text="Login"
                 android:textColor="#fff"
                 android:textSize="18sp"
                 android:background="@drawable/gradient" />
@@ -140,4 +169,5 @@
         android:text="Login"
         android:textColor="#673AB7"
         android:textSize="15sp" />
+
 </RelativeLayout>
