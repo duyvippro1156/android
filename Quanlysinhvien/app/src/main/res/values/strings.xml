@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quanlysinhvien</string>
+    <string name="Add_New">Thêm</string>
+    <string name="edit">Cập nhật Contact</string>
+    <string name="delete">Xoá Contact</string>
+    <string name="title_activity_display_contact">DisplayContact</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="street">Street</string>
+    <string name="country">City/State/Zip</string>
+    <string name="save">Lưu Contact</string>
+    <string name="deleteContact">Bạn có chắc không?</string>
+    <string name="yes">Đồng ý</string>
+    <string name="no">Không</string>
+</resources>

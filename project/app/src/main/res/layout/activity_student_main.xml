@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Roll No."
+        android:hint="Nhập Mã số."
         android:inputType="number" >
 
         <requestFocus />
@@ -27,14 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Your Name" />
+        android:hint="Nhập Tên" />
 
     <EditText
         android:id="@+id/marks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Marks"
+        android:hint="Nhập Điểm"
         android:inputType="number" />
 
     <LinearLayout
@@ -45,13 +45,13 @@
             android:id="@+id/addbtn"
             android:layout_width="140dp"
             android:layout_height="90dp"
-            android:text="Add" />
+            android:text="Thêm" />
 
         <Button
             android:id="@+id/deletebtn"
             android:layout_width="140dp"
             android:layout_height="90dp"
-            android:text="Delete" />
+            android:text="Xóa" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,13 +62,13 @@
             android:id="@+id/modifybtn"
             android:layout_width="140dp"
             android:layout_height="90dp"
-            android:text="Modify" />
+            android:text="Sửa" />
 
         <Button
             android:id="@+id/viewbtn"
             android:layout_width="140dp"
             android:layout_height="90dp"
-            android:text="View" />
+            android:text="Xem" />
     </LinearLayout>
 
     <LinearLayout
@@ -80,13 +80,13 @@
             android:id="@+id/viewallbtn"
             android:layout_width="140dp"
             android:layout_height="90dp"
-            android:text="View all" />
+            android:text="Xem tất cả" />
 
         <Button
             android:id="@+id/showbtn"
             android:layout_width="140dp"
             android:layout_height="90dp"
-            android:text="Show" />
+            android:text="Tác giả" />
 
     </LinearLayout>
 

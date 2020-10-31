@@ -48,12 +48,12 @@ public class StudentMainActivity extends Activity {
 			    		   ename.getText().toString().trim().length()==0||
 			    		   emarks.getText().toString().trim().length()==0)
 			    		{
-			    			showMessage("Error", "Please enter all values");
+			    			showMessage("Error", "Yêu cầu nhập đủ thông tin");
 			    			return;
 			    		}
 			    		db.execSQL("INSERT INTO student VALUES('"+eroll_no.getText()+"','"+ename.getText()+
 			    				   "','"+emarks.getText()+"');");
-			    		showMessage("Success", "Record added successfully");
+			    		showMessage("Success", "Thêm thành công");
 			    		clearText();
 			}
 		});
@@ -64,18 +64,18 @@ public class StudentMainActivity extends Activity {
 				// TODO Auto-generated method stub
 				if(eroll_no.getText().toString().trim().length()==0)
 	    		{
-	    			showMessage("Error", "Please enter Rollno");
+	    			showMessage("Error", "Yêu cầu nhập Mã số!");
 	    			return;
 	    		}
 	    		Cursor c=db.rawQuery("SELECT * FROM student WHERE rollno='"+eroll_no.getText()+"'", null);
 	    		if(c.moveToFirst())
 	    		{
 	    			db.execSQL("DELETE FROM student WHERE rollno='"+eroll_no.getText()+"'");
-	    			showMessage("Success", "Record Deleted");
+	    			showMessage("Success", "Xóa thành công");
 	    		}
 	    		else
 	    		{
-	    			showMessage("Error", "Invalid Rollno");
+	    			showMessage("Error", "Mã số không hợp lệ!");
 	    		}
 	    		clearText();
 			}
@@ -87,7 +87,7 @@ public class StudentMainActivity extends Activity {
 				// TODO Auto-generated method stub
 				if(eroll_no.getText().toString().trim().length()==0)
 	    		{
-	    			showMessage("Error", "Please enter Rollno");
+	    			showMessage("Error", "Yêu cầu nhập Mã số!");
 	    			return;
 	    		}
 	    		Cursor c=db.rawQuery("SELECT * FROM student WHERE rollno='"+eroll_no.getText()+"'", null);
@@ -95,11 +95,11 @@ public class StudentMainActivity extends Activity {
 	    		{
 	    			db.execSQL("UPDATE student SET name='"+ename.getText()+"',marks='"+emarks.getText()+
 	    					"' WHERE rollno='"+eroll_no.getText()+"'");
-	    			showMessage("Success", "Record Modified");
+	    			showMessage("Success", "Sửa thành công");
 	    		}
 	    		else
 	    		{
-	    			showMessage("Error", "Invalid Rollno");
+	    			showMessage("Error", "Mã số không hợp lệ!");
 	    		}
 	    		clearText();
 			}
@@ -111,7 +111,7 @@ public class StudentMainActivity extends Activity {
 				// TODO Auto-generated method stub
 				if(eroll_no.getText().toString().trim().length()==0)
 	    		{
-	    			showMessage("Error", "Please enter Rollno");
+	    			showMessage("Error", "Yêu cầu nhập Mã số!");
 	    			return;
 	    		}
 	    		Cursor c=db.rawQuery("SELECT * FROM student WHERE rollno='"+eroll_no.getText()+"'", null);
@@ -122,7 +122,7 @@ public class StudentMainActivity extends Activity {
 	    		}
 	    		else
 	    		{
-	    			showMessage("Error", "Invalid Rollno");
+	    			showMessage("Error", "Mã số không hợp lệ!");
 	    			clearText();
 	    		}
 			}
@@ -135,17 +135,17 @@ public class StudentMainActivity extends Activity {
 				Cursor c=db.rawQuery("SELECT * FROM student", null);
 	    		if(c.getCount()==0)
 	    		{
-	    			showMessage("Error", "No records found");
+	    			showMessage("Error", "Không tìm thấy");
 	    			return;
 	    		}
 	    		StringBuffer buffer=new StringBuffer();
 	    		while(c.moveToNext())
 	    		{
-	    			buffer.append("Rollno: "+c.getString(0)+"\n");
-	    			buffer.append("Name: "+c.getString(1)+"\n");
-	    			buffer.append("Marks: "+c.getString(2)+"\n\n");
+	    			buffer.append("Mã số: "+c.getString(0)+"\n");
+	    			buffer.append("Tên: "+c.getString(1)+"\n");
+	    			buffer.append("Điểm: "+c.getString(2)+"\n\n");
 	    		}
-	    		showMessage("Student Details", buffer.toString());
+	    		showMessage("Kết quả", buffer.toString());
 			}
 		});
 		Show1.setOnClickListener(new OnClickListener() {
@@ -153,7 +153,7 @@ public class StudentMainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				showMessage("Student Management Application", "Brought To You By code-projects.org");
+				showMessage("Quản lý sinh viên Application", "Write by Duy Mai");
 			}
 		});
 		
